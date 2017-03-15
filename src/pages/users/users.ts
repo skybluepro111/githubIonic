@@ -18,10 +18,10 @@ import {  GithubUsers } from '../../providers/github-users';
 })
 export class UsersPage {
   users: User[]
-  
+
   constructor(public navCtrl: NavController, private githubUsers: GithubUsers) {
     githubUsers.load().subscribe(users => {
-      console.log(users)
+      this.users = users;
     })
   }
 
