@@ -24,10 +24,13 @@ export class UsersPage {
     githubUsers.load().subscribe(users => {
       this.users = users;
     })
+    githubUsers.searchUsers('scotch').subscribe(users => {
+        console.log(users)
+      });
   }
 
   goToDetails(login: string) {
     this.navCtrl.push(UserDetailsPage, {login});
   }
-
+  
 }
