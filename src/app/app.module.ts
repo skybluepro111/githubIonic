@@ -12,7 +12,8 @@ import {UserDetailsPage } from '../pages/user-details/user-details';
     MyApp,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -22,7 +23,8 @@ import {UserDetailsPage } from '../pages/user-details/user-details';
     MyApp,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},GithubUsers]
 })
